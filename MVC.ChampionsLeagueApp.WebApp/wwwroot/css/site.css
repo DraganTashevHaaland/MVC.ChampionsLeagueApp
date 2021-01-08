@@ -1,0 +1,50 @@
+﻿.match {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.match > div {
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.buy-status {
+    font-size: 30px;
+}
+
+.successfullyByed {
+    color: green;
+}
+
+.successfullyByed{
+    color: red;
+}
+
+.buys > div {
+    margin-bottom: 20px;
+}
+
+.carousel-custom img {
+    height: 500px;
+}
+
+.buy-admin-panel {
+    margin-bottom: 10px;
+}
+
+.nav-logo {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-logo:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+
+

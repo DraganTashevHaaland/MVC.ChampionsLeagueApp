@@ -1,0 +1,22 @@
+﻿@model MVC.ChampionsLeagueApp.ViewModels.Models.BuysViewModel
+
+@{ ViewBag.Title = "Buys"; }
+
+<h1>Buys</h1>
+
+<h2>Our first buys match ticket is: @Model.FirstTicket</h2>
+<h3>Our first customer is: @Model.FirstPersonName</h3>
+<h3>Total buyed tickets since we start salling: @Model.NumberOfBuyedTickets </h3>
+<h3>Most buyed ticket is: @Model.MostBuyedTicketMatch</h3>
+<br />
+
+<h2>All Buys</h2>
+<div class="buys">
+    @foreach (var buy in Model.Buys)
+    {
+        <partial name="~/Views/Shared/_Buy.cshtml" for="@buy" />
+    }
+</div>
+
+
+

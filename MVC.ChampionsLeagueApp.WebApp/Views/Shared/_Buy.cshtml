@@ -1,0 +1,20 @@
+﻿@model MVC.ChampionsLeagueApp.ViewModels.Models.BuyViewModel
+
+<div class="card">
+    <h5 class="card-title">Buy Number: @Model.Id></h5>
+
+    <div class="card-boydy">
+        <h5 class="card-title">User: @Model.FullName</h5>
+        <h5 class="card-title">Price: @Model.Price</h5>
+
+        <h5 class="card-title">Buy: @Model.FullName</h5>
+        <div class="ticket">
+            @foreach (var ticket in Model.Tickets)
+            {
+                <partial name="~/Views/Shared/_Ticket.cshtml" for="@ticket" />
+            }
+        </div>
+
+        <a asp-controller="Buy" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-outline-success">Details</a>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿@model MVC.ChampionsLeagueApp.ViewModels.Models.GetBuyViewModel
+
+@{ ViewBag.Title = "Buy"; } 
+
+<form asp-controller="Buy" asp-action="Buy" method="post">
+
+    <h2>Get buy ticket here!</h2>
+
+    <h3>User info:</h3>
+
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName"><br />
+
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName"><br />
+
+    <label asp-for="Address"></label>
+    <input asp-for="Address"><br />
+
+    <label asp-for="PhoneNumber"></label>
+    <input asp-for="PhoneNumber"><br />
+
+    @for (int i = 0; i < Model.Tickets.Count; i++)
+    {
+        <h1>Ticket number: @(i + 1)</h1>
+
+        <select asp-for="Tickets[i].MatchName" asp-items="new SelectList(Model.TicketNames)"></select>
+        <select asp-for="Tickets[i].Sector" asp-items="Html.GetEnumSelectList<MVC.ChampionsLeagueApp.DomainModels.Enums.SectorTicket>()"></select>
+    }
+
+    <br />
+    <br />
+
+    <button type="submit" class="btn btn-outline-success">Get buy Tikcekt</button>
+
+</form>
+
+<h5>@ViewBag.Error</h5>

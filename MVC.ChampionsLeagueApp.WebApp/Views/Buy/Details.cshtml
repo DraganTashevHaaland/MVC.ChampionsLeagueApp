@@ -1,0 +1,52 @@
+﻿@model MVC.ChampionsLeagueApp.ViewModels.Models.BuyViewModel
+
+@{ ViewBag.Title = "Details"; }
+
+<h1>Buy Details</h1>
+
+<h3>Buy Number: @Model.Id</h3>
+<h3>User: @Model.FullName</h3>
+<h3>Adress: @Model.Address</h3>
+<h3>Contact: @Model.Contact</h3>
+<h3>Price: @Model.Price</h3>
+
+<h2>Buy contains: </h2>
+<div class="matches">
+
+    @{ 
+        @foreach (var ticket in Model.Tickets)
+        {
+            <partial name="~/Views/Shared/_Ticket.cshtml" for="@ticket" />
+        }
+    }
+</div>
+
+<span class="buy-status"> Buy Status - </span>
+
+@if (Model.IsSuccessfullyBuying)
+{
+    <span class="buy-status successfully buying">Ticket is successfully buying</span>
+}
+else
+{
+    <span class="buy-status not successfully buying">Tciket is coming to you, be patient!!!</span>
+    <br />
+    <a asp-controller="Buy" asp-action="CompleteBuying" asp-route-id="@Model.Id" class="btn btn-outline-success">Complete Buy</a>
+}
+
+<div style="margin-top: 5px;">
+    <a asp-controller="Buy" asp-action="Buys" class="btn bg-outline-primary">Back</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

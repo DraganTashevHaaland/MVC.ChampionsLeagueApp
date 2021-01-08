@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@ViewBag.Title - Champions League App</title>
+
+        @*personal css*@
+        <link href="~/css/site.css" rel="stylesheet" />
+
+        @*libraries*@
+        <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <link href="~/lib/bootstrap/css/bootstrap-grid.css" rel="stylesheet"/>
+        <link href="~/lib/bootstrap/css/bootstrap-reboot.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            @*nav*@
+            <partial name="~/Views/Shared/_Navbar.cshtml" />
+
+            @*body*@
+            @RenderBody()
+
+            @*footer*@
+            <partial name="~/Views/Shared/_Footer.cshtml" />
+        </div>
+
+        @*libraries*@
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+
+        @*personal js*@
+        <script src="~/js/site.js"></script>
+    </body>
+</html>
+

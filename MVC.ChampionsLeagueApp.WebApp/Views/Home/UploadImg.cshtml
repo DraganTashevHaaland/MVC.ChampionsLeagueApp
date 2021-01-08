@@ -1,0 +1,32 @@
+﻿@model MVC.ChampionsLeagueApp.ViewModels.Helpers.ImageClass
+
+@{ ViewBag.Title = "Upload Image"; }
+
+<h1>Upload Tickets images</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="UploadingImg">
+
+    <input type="file" name="upload img file" />
+
+    <input type="submit" value="upload img file" />
+
+    <p>@Model.Message</p>
+
+    <table class="table">
+        <tr>
+            <th>Image Name</th>
+            <th>Image</th>
+            <th>Options</th>
+        </tr>
+
+        @foreach (var item in Model.FileImages)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td><img src="~/images/tickets/@item.Name" height="100" /></td>
+                <td><a asp-controller="Home" asp-action="DeleteImg" asp-route-imgdelete="@item.Name">Delete</a></td>
+            </tr>
+        }
+
+    </table>   
+</form>

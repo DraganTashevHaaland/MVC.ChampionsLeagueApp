@@ -1,0 +1,22 @@
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a asp-controller="Home" asp-action="Index" class="nav-logo">
+        <img height="25" src="https://www.pinclipart.com/picdir/middle/102-1027507_champions-league-logo-logok-football-clip-art-with.png" />
+        <span>Champions League App</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li><a asp-controller="Home" asp-action="Index" class="nav-link">Home</a></li>
+            <li><a asp-controller="Home" asp-action="Matches" class="nav-link">Matches</a></li>
+            <li><a asp-controller="Buy" asp-action="Buys" class="nav-link">Tickets</a></li>
+            <li><a asp-controller="Home" asp-action="Contact" class="nav-link">Contact</a></li>
+            <li><a asp-controller="Home" asp-action="About" class="nav-link">About</a></li>
+
+        </ul>
+    </div>
+</nav>

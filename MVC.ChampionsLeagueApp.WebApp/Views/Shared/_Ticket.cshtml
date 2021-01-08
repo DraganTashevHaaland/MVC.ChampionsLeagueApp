@@ -1,0 +1,15 @@
+﻿@model MVC.ChampionsLeagueApp.ViewModels.Models.TicketViewModel
+
+<div class="card" style="width: 18rem;">
+
+    <img src="~/images/tickets/@(Model.MatchName).png" class="card-img-top" alt="ticket">
+
+    <div class="card-body">
+        <h5 class="card-title">@Model.MatchName</h5>
+    </div>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Sector: @Model.Sector.ToString()</li>
+        <li class="list-group-item">Price: @Model.Price$</li>
+    </ul>
+</div>

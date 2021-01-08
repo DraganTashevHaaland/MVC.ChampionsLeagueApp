@@ -1,0 +1,25 @@
+﻿@model MVC.ChampionsLeagueApp.ViewModels.Models.MatchesViewModel
+@{ ViewBag.Title = "Match"; }
+
+<h1>BUY</h1>
+
+<p class="match-admin-panel">
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Admin Panel
+    </a>
+</p>
+<div class="collapse match-admin-panel" id="collapseExample">
+    <div class="card card-doby">
+        <span>
+            <a asp-controller="Home" asp-action="AddTicket" class="btn btn-primary">Add Ticket</a>
+            <a asp-controller="Home" asp-action="UploadImg" class="btn btn-primary">Upload Image</a>
+        </span>
+    </div>
+</div>
+
+<div class="match">
+    @foreach (var item in @Model.Matches)
+    {
+        <partial name="~/Views/Shared/_Ticket.cshtml" for="@item" />
+    } 
+</div>

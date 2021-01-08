@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC.ChampionsLeagueApp.WebApp", "MVC.ChampionsLeagueApp.WebApp\MVC.ChampionsLeagueApp.WebApp.csproj", "{32E12E2A-3348-42B8-8819-2897B0E029AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.ChampionsLeagueApp.ViewModels", "MVC.ChampionsLeagueApp.ViewModels\MVC.ChampionsLeagueApp.ViewModels.csproj", "{902DF21F-6104-40FB-BAC0-CF05DBD7A987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.ChampionsLeagueApp.Services", "MVC.ChampionsLeagueApp.Services\MVC.ChampionsLeagueApp.Services.csproj", "{EAA26599-56B4-4250-935C-FFF8ED2FD6C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.ChampionsLeagueApp.DomainModels", "MVC.ChampionsLeagueApp.DomainModels\MVC.ChampionsLeagueApp.DomainModels.csproj", "{EEA246B2-5587-4FAC-B06A-76913C7A44A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.ChampionsLeagueApp.DataAccess", "MVC.ChampionsLeagueApp.DataAccess\MVC.ChampionsLeagueApp.DataAccess.csproj", "{A7186729-396C-4441-BE6F-91F4A551E6B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32E12E2A-3348-42B8-8819-2897B0E029AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E12E2A-3348-42B8-8819-2897B0E029AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E12E2A-3348-42B8-8819-2897B0E029AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E12E2A-3348-42B8-8819-2897B0E029AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902DF21F-6104-40FB-BAC0-CF05DBD7A987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902DF21F-6104-40FB-BAC0-CF05DBD7A987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902DF21F-6104-40FB-BAC0-CF05DBD7A987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902DF21F-6104-40FB-BAC0-CF05DBD7A987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA26599-56B4-4250-935C-FFF8ED2FD6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA26599-56B4-4250-935C-FFF8ED2FD6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA26599-56B4-4250-935C-FFF8ED2FD6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA26599-56B4-4250-935C-FFF8ED2FD6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEA246B2-5587-4FAC-B06A-76913C7A44A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA246B2-5587-4FAC-B06A-76913C7A44A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA246B2-5587-4FAC-B06A-76913C7A44A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA246B2-5587-4FAC-B06A-76913C7A44A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7186729-396C-4441-BE6F-91F4A551E6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7186729-396C-4441-BE6F-91F4A551E6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7186729-396C-4441-BE6F-91F4A551E6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7186729-396C-4441-BE6F-91F4A551E6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78DECD0B-CC0F-41E4-8E7F-94FBA6ED2067}
+	EndGlobalSection
+EndGlobal
