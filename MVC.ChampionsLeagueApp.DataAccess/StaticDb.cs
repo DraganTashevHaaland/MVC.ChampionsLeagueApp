@@ -32,84 +32,168 @@ namespace MVC.ChampionsLeagueApp.DataAccess
                 new Ticket()
                 {
                     Id = 1,
-                    MatchName = "Juventus vs. Barcelona",
+                    MatchName = "Atalanta vs. Real Madrid",
                     Sector = SectorTicket.A,
                     Price = 80
                 },
                 new Ticket()
                 {
                     Id = 2,
-                    MatchName = "Juventus vs. Barcelona",
+                    MatchName = "Atalanta vs. Real Madrid",
                     Sector = SectorTicket.B,
                     Price = 60
                 },
                 new Ticket()
                 {
                     Id = 3,
-                    MatchName = "Juventus vs. Barcelona",
+                    MatchName = "Atalanta vs. Real Madrid",
                     Sector = SectorTicket.C,
                     Price = 35
                 },
                 new Ticket()
                 {
                     Id = 4,
-                    MatchName = "PSG vs. Liverpool",
+                    MatchName = "Atletico Madrid vs. Chelsea",
                     Sector = SectorTicket.A,
                     Price = 80  
                 },
                 new Ticket()
                 {
                     Id = 5,
-                    MatchName = "PSG vs. Liverpool",
+                    MatchName = "Atletico Madrid vs. Chelsea",
                     Sector = SectorTicket.B,
                     Price = 60
                 },
                 new Ticket()
                 {
                     Id = 6,
-                    MatchName = "PSG vs. Liverpool",
+                    MatchName = "Atletico Madrid vs. Chelsea",
                     Sector = SectorTicket.C,
                     Price = 35
                 },
                 new Ticket()
                 {
                     Id = 7,
-                    MatchName = "Real Madrid vs. Bayern Munich",
+                    MatchName = "Barcelona vs. Psg",
                     Sector = SectorTicket.A,
                     Price = 80
                 },
                 new Ticket()
                 {
                     Id = 8,
-                    MatchName = "Real Madrid vs. Bayern Munich",
+                    MatchName = "Barcelona vs. Psg",
                     Sector = SectorTicket.B,
                     Price = 60
                 },
                 new Ticket()
                 {
                     Id = 9,
-                    MatchName = "Real Madrid vs. Bayern Munich",
+                    MatchName = "Barcelona vs. Psg",
                     Sector = SectorTicket.B,
                     Price = 35
                 },
                 new Ticket()
                 {
                     Id = 10,
-                    MatchName = "Borussia Dormund vs. Napoli",
+                    MatchName = "Gladbach vs. Manchetser City",
                     Sector = SectorTicket.A,
                     Price = 80
                 },
                 new Ticket()
                 {
                     Id = 11,
-                    MatchName = "Borussia Dormund vs. Napoli",
+                    MatchName = "Gladbach vs. Manchetser City",
                     Sector = SectorTicket.B,
                     Price = 60
                 },
                 new Ticket()
                 {
                     Id = 12,
-                    MatchName = "Borussia Dormund vs. Napoli",
+                    MatchName = "Gladbach vs. Manchetser City",
+                    Sector = SectorTicket.C,
+                    Price = 35
+                },
+                new Ticket()
+                {
+                    Id = 13,
+                    MatchName = "Laipzig vs. Liverpool",
+                    Sector = SectorTicket.A,
+                    Price = 80
+                },
+                new Ticket()
+                {
+                    Id = 14,
+                    MatchName = "Laipzig vs. Liverpool",
+                    Sector = SectorTicket.B,
+                    Price = 60
+                },
+                new Ticket()
+                {
+                    Id = 15,
+                    MatchName = "Laipzig vs. Liverpool",
+                    Sector = SectorTicket.C,
+                    Price = 35
+                },
+                new Ticket()
+                {
+                    Id = 16,
+                    MatchName = "Lazio vs. Bayern Munich",
+                    Sector = SectorTicket.A,
+                    Price = 80
+                },
+                new Ticket()
+                {
+                    Id = 17,
+                    MatchName = "Lazio vs. Bayern Munich",
+                    Sector = SectorTicket.B,
+                    Price = 60
+                },
+                new Ticket()
+                {
+                    Id = 18,
+                    MatchName = "Lazio vs. Bayern Munich",
+                    Sector = SectorTicket.C,
+                    Price = 35
+                },
+                new Ticket()
+                {
+                    Id = 19,
+                    MatchName = "Porto vs. Juventus",
+                    Sector = SectorTicket.A,
+                    Price = 80
+                },
+                new Ticket()
+                {
+                    Id = 20,
+                    MatchName = "Porto vs. Juventus",
+                    Sector = SectorTicket.B,
+                    Price = 60
+                },
+                new Ticket()
+                {
+                    Id = 21,
+                    MatchName = "Porto vs. Juventus",
+                    Sector = SectorTicket.C,
+                    Price = 35
+                },
+                new Ticket()
+                {
+                    Id = 22,
+                    MatchName = "Sevilla vs. Borussia Durtmund",
+                    Sector = SectorTicket.A,
+                    Price = 80
+                },
+                new Ticket()
+                {
+                    Id = 23,
+                    MatchName = "Sevilla vs. Borussia Durtmund",
+                    Sector = SectorTicket.B,
+                    Price = 60
+                },
+                new Ticket()
+                {
+                    Id = 24,
+                    MatchName = "Sevilla vs. Borussia Durtmund",
                     Sector = SectorTicket.C,
                     Price = 35
                 },

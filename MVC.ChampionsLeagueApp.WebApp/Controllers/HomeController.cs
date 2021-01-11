@@ -33,27 +33,28 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
         }
 
         [HttpPost]
-        //Testing Postman link: https://localhost:5001/Home
+        //Postman link: https://localhost:5001/Home
         public IActionResult Index(HomeViewModel model)
         {
             return RedirectToAction("Buy", "Buy", new { tickets = model.NumberOfTickets});
         }
 
         [HttpGet]
-        //Testing Postman link: https://localhost:5001/Home/About
+        //Postman link: https://localhost:5001/Home/About
         public IActionResult About()
         {
             return View();
         }
 
         [HttpGet]
-        //Testing Postman link: https://localhost:5001/Home/Contact
+        //Postman link: https://localhost:5001/Home/Contact
         public IActionResult Contact()
         {
             return View();
         }
 
         [HttpGet]
+        //Postman link:  https://localhost:5001/Home/Matches
         public IActionResult Matches()
         {
             var dbMatches = _matchService.GetMatches();
@@ -83,14 +84,14 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
         }
 
         [HttpGet]
-        //Testing Postman link: https://localhost:5001/Home/AddTicket
+        //Postman link: https://localhost:5001/Home/AddTicket
         public IActionResult AddTicket()
         {
             return View();
         }
 
         [HttpPost]
-        //Testing Postman link: https://localhost:5001/Home/AddTicket
+        //Postman link: https://localhost:5001/Home/AddTicket
         public IActionResult AddTicket(AddTicketViewModel model)
         {
             _matchService.AddTicketInMatch(model);
@@ -98,7 +99,7 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
         }
 
         [HttpGet]
-        //Testing Postman link: https://localhost:5001/Home/UploadImg
+        //Postman link: https://localhost:5001/Home/UploadImg
         public IActionResult UploadImg()
         {
             var ic = new ImageClass();
@@ -108,7 +109,7 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
         }
 
         [HttpPost]
-        //Testing Postman link: https://localhost:5001/Home/UploadImg
+        //Postman link: https://localhost:5001/Home/UploadImg
         public IActionResult UploadImg(IFormFile imgfile)
         {
             ImageClass ic = new ImageClass();
@@ -148,10 +149,9 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
             DirectoryInfo di = new DirectoryInfo(displayImg);
             List<FileInfo> fileInfo = di.GetFiles().ToList();
             return fileInfo;
-        }
+        }       
 
-        [HttpGet]
-        
+        [HttpGet] 
         public IActionResult DeleteImg(string imgdelete)
         {
             imgdelete = Path.Combine(_webhost.WebRootPath, "images/tickets", imgdelete);
@@ -167,3 +167,5 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
         }
     }
 }
+
+

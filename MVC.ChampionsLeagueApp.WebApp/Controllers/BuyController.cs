@@ -47,6 +47,7 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
         }
 
         [HttpGet]
+        //Postman link: https://localhost:5001/Buy/Details
         public IActionResult Details(int id)
         {
             var buy = _buyService.GetBuyById(id);
@@ -57,7 +58,8 @@ namespace MVC.ChampionsLeagueApp.WebApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetCompleteBuying(int id)
+        //Postman link: https://localhost:5001/Buy/CompleteBuy
+        public IActionResult CompleteBuy(int id)
         {
             _buyService.FinishBuying(id);
             return RedirectToAction("Details", new { id = id });

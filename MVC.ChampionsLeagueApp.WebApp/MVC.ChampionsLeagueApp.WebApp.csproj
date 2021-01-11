@@ -17,8 +17,4 @@
     <ProjectReference Include="..\MVC.ChampionsLeagueApp.ViewModels\MVC.ChampionsLeagueApp.ViewModels.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\tickets\" />
-  </ItemGroup>
-
 </Project>

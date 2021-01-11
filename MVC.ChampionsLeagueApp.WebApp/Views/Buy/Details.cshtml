@@ -1,6 +1,6 @@
 ﻿@model MVC.ChampionsLeagueApp.ViewModels.Models.BuyViewModel
 
-@{ ViewBag.Title = "Details"; }
+@{ ViewBag.Title = "Buy Details"; }
 
 <h1>Buy Details</h1>
 
@@ -22,20 +22,19 @@
 </div>
 
 <span class="buy-status"> Buy Status - </span>
-
 @if (Model.IsSuccessfullyBuying)
 {
     <span class="buy-status successfully buying">Ticket is successfully buying</span>
 }
 else
 {
-    <span class="buy-status not successfully buying">Tciket is coming to you, be patient!!!</span>
+    <span class="buy-status not-successfully buying">Tciket is coming to you, be patient!!!</span>
     <br />
-    <a asp-controller="Buy" asp-action="CompleteBuying" asp-route-id="@Model.Id" class="btn btn-outline-success">Complete Buy</a>
+    <a asp-controller="Buy" asp-action="CompleteBuy" asp-route-id="@Model.Id" class="btn btn-outline-success">Complete Buy</a>
 }
 
 <div style="margin-top: 5px;">
-    <a asp-controller="Buy" asp-action="Buys" class="btn bg-outline-primary">Back</a>
+    <a asp-controller="Buy" asp-action="Buys" class="btn btn-outline-primary">Back</a>
 </div>
 
 
